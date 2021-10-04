@@ -1,0 +1,49 @@
+.result {
+  margin-top: -90px;
+  margin-bottom: 58px;
+  .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 29px;
+    span {
+      margin-left: 15px;
+      color: $white;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 23px;
+      b {
+        margin-left: 10px;
+        color: #ff7878;
+        font-size: 28px;
+        line-height: 35px;
+        @media (max-width: 425px) {
+          font-size: 21px;
+        }
+      }
+      & > span {
+        font-size: 20px;
+        margin: 0;
+        @media (max-width: 425px) {
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 425px) {
+        font-size: 19px;
+      }
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 19px;
+    }
+  }
+  @media (max-width: 425px) {
+    margin-bottom: 19px;
+  }
+}
+
+.avatar {
+  @media (max-width: 425px) {
+    width: 32px;
+    height: 32px;
+  }
+}

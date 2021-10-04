@@ -1,0 +1,49 @@
+button {
+  width: 445px;
+  height: 89px;
+  border-radius: 14px;
+  background-color: $white;
+  border: 2px solid $secondary;
+  box-sizing: border-box;
+  color: $secondary;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.3s;
+    background-color: #424a9e;
+    color: $white;
+  }
+  @media (max-width: 425px) {
+    width: 320px;
+    height: 64px;
+    font-size: 15px;
+  }
+}
+
+.btn {
+  background: linear-gradient(90deg, #ffa67a 0%, #ff6065 100%);
+  color: $white;
+  box-shadow: inset 0px -6px 0px #c65252;
+  &:hover {
+    transition: all 0.3s;
+    opacity: 0.8;
+  }
+  &_restart {
+    margin-top: 61px;
+    @media (max-width: 425px) {
+      margin-top: 26px;
+    }
+  }
+}
+
+.btn_true {
+  margin-bottom: 40px;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 425px) {
+    margin-bottom: 15px;
+  }
+}

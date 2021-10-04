@@ -1,0 +1,82 @@
+$primary: #4751c0;
+$secondary: #4953be;
+$white: #ffffff;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: $secondary;
+  transition: all 0.3s;
+}
+
+input,
+button,
+select {
+  font: inherit;
+  display: block;
+  margin: 0 auto;
+}
+
+input,
+select {
+  width: 445px;
+  height: 75px;
+  border-radius: 10px;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 13px -1px rgba(23, 21, 92, 0.06);
+  color: $white;
+  font-size: 18px;
+  padding: 22px 19px;
+  font-weight: 500;
+  background-color: $primary;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  @media (max-width: 425px) {
+    width: 320px;
+    height: 54px;
+    font-size: 13px;
+    padding: 17px;
+  }
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: $white;
+  font-size: 46px;
+  font-weight: 700;
+  @media (max-width: 425px) {
+    font-size: 26px;
+  }
+}
+
+@import "styles/page";
+@import "styles/icons";
+@import "styles/lable";
+@import "styles/button";
+@import "styles/loading";
+@import "styles/progress";
+@import "styles/answer";
+@import "styles/result";
+@import "styles/text";

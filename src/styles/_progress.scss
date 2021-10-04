@@ -1,0 +1,51 @@
+.progress {
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  height: 5px;
+  background-color: #dbdeff;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  &_value {
+    border-radius: 20px;
+    height: 5px;
+    background-color: #ff7878;
+    overflow: hidden;
+  }
+  @media (max-width: 425px) {
+    margin-bottom: 50px;
+  }
+}
+
+.wrapper {
+  &_progress {
+    text-align: left;
+    width: 406px;
+    margin: 0 auto;
+    p {
+      margin-bottom: 10px;
+      font-size: 20px;
+      span {
+        font-size: 28px;
+        color: #ff7878;
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+        @media (max-width: 425px) {
+          font-size: 20px;
+        }
+      }
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+      @media (max-width: 425px) {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 425px) {
+      width: 339px;
+    }
+  }
+}

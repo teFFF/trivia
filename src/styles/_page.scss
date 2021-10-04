@@ -1,0 +1,39 @@
+.page {
+  background-color: $primary;
+  min-height: 100vh;
+  .wrapper {
+    padding: 180px 0;
+    background: url("../img/vector1.svg") no-repeat 0% 0%,
+      url("../img/vector2.svg") no-repeat 0% 100%,
+      url("../img/vector3.svg") no-repeat 100% 5%,
+      url("../img/vector4.svg") no-repeat 100% 100%;
+    @media (max-width: 425px) {
+      background-size: 90px;
+    }
+  }
+  &_white {
+    background-color: $white;
+    .wrapper {
+      background: url("../img/vector5.svg") no-repeat 0% 0%,
+        url("../img/vector6.svg") no-repeat 0% 100%,
+        url("../img/vector7.svg") no-repeat 100% 10%,
+        url("../img/vector8.svg") no-repeat 100% 100%;
+      @media (max-width: 425px) {
+        background-size: 100px;
+      }
+    }
+    h1 {
+      color: $secondary;
+      font-size: 81px;
+      line-height: 100px;
+      @media (max-width: 768px) {
+        font-size: 61px;
+        line-height: 80px;
+      }
+      @media (max-width: 425px) {
+        font-size: 31px;
+        line-height: 39px;
+      }
+    }
+  }
+}
