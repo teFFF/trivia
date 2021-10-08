@@ -2,17 +2,24 @@
   background-color: $primary;
   min-height: 100vh;
   .wrapper {
-    padding: 180px 0;
-    background: url("../img/vector1.svg") no-repeat 0% 0%,
-      url("../img/vector2.svg") no-repeat 0% 100%,
-      url("../img/vector3.svg") no-repeat 100% 5%,
-      url("../img/vector4.svg") no-repeat 100% 100%;
-    @media (max-width: 425px) {
-      background-size: 90px;
-      padding: 130px 0;
-    }
+    min-height: inherit;
+    background: url("../img/vector1.svg") no-repeat 0 0,
+      url("../img/vector2.svg") no-repeat 0 100%,
+      url("../img/vector3.svg") no-repeat 100% 0,
+      url("../img/vector4.svg") no-repeat 100% 120%;
+    background-size: 90px;
   }
-  &_white {
+  .container {
+    padding: 125px 0 40px;
+    text-align: center;
+    position: relative;
+  }
+  h1 {
+    color: $white;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  &__white {
     background-color: $white;
     .wrapper {
       background: url("../img/vector5.svg") no-repeat 0% 0%,
@@ -23,17 +30,58 @@
         background-size: 100px;
       }
     }
+    .container {
+      padding: 130px 20px 115px;
+    }
     h1 {
       color: $secondary;
-      font-size: 81px;
-      line-height: 100px;
-      @media (max-width: 768px) {
+      font-size: 31px;
+      line-height: 39px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .page {
+    .wrapper {
+      background: url("../img/vector1.svg") no-repeat 0 -100%,
+        url("../img/vector2.svg") no-repeat 0 100%,
+        url("../img/vector3.svg") no-repeat 100% 0%,
+        url("../img/vector4.svg") no-repeat 100% 120%;
+      background-size: auto;
+    }
+    h1 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    &__white {
+      .wrapper {
+        background: url("../img/vector5.svg") no-repeat 0% 0%,
+          url("../img/vector6.svg") no-repeat 0% 100%,
+          url("../img/vector7.svg") no-repeat 100% 10%,
+          url("../img/vector8.svg") no-repeat 100% 100%;
+        background-size: auto;
+      }
+      h1 {
         font-size: 61px;
         line-height: 80px;
       }
-      @media (max-width: 425px) {
-        font-size: 31px;
-        line-height: 39px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .page {
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 46px;
+      line-height: 57px;
+    }
+    &__white {
+      h1 {
+        font-size: 81px;
+        line-height: 100px;
       }
     }
   }

@@ -1,13 +1,29 @@
+interface Question {
+  question: string;
+  correct_answer: string;
+}
+
+export interface AnswerType {
+  answer: string;
+  correctAnswer: string;
+  question: string;
+}
+
 export interface GameState {
   stage: string;
   difficulty: string;
   amount: number;
-  questions: any[];
+  questions: Question[];
   loading: boolean;
   error: null | string;
   score: number;
   currentQuestionIndex: number;
-  answers: any[];
+  answers: AnswerType[];
+}
+
+export enum Icon {
+  AmountIcon = "AmountIcon",
+  CupIcon = "CupIcon",
 }
 
 export enum GameActionTypes {
@@ -42,7 +58,7 @@ interface FetchQuestionsAction {
 
 interface FetchQuestionsSuccessAction {
   type: GameActionTypes.FETCH_QUESTIONS_SUCCESS;
-  payload: any[];
+  payload: Question[];
 }
 
 interface FetchQuestionsErrorAction {

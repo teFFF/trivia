@@ -2,26 +2,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 620px;
-  height: 79px;
+  width: 321px;
+  height: 65px;
   border-radius: 14px;
-  padding: 0 22px;
-  font-size: 16px;
+  padding: 0 18px;
+  font-size: 12px;
   text-align: left;
   margin: 24px auto;
-  &_true {
+  &__true {
     background-color: #fffbfa;
   }
-  &_false {
+  &__false {
     background-color: #ffdbdb;
   }
   &:last-child {
     margin-left: 30px;
   }
-  @media (max-width: 425px) {
-    width: 321px;
-    height: 65px;
-    font-size: 12px;
-    padding: 0 18px;
+  @media (min-width: 768px) {
+    width: 620px;
+    height: 79px;
+    font-size: 16px;
+    padding: 0 22px;
   }
 }

@@ -46,8 +46,7 @@ export const gameReducer = (
       answers.push({
         question: currentQuestion.question,
         answer: action.payload,
-        correctAnswer: currentQuestion.correct_answer,
-        isCorrect: action.payload === currentQuestion.correct_answer,
+        correctAnswer: currentQuestion.correct_answer
       });
       return {
         ...state,

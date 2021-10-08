@@ -1,49 +1,82 @@
 .result {
   margin-top: -90px;
-  margin-bottom: 58px;
-  .score {
+  &__score {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 29px;
+    margin-bottom: 19px;
     span {
       margin-left: 15px;
       color: $white;
-      font-size: 22px;
+      font-size: 19px;
       font-weight: 700;
       line-height: 23px;
       b {
         margin-left: 10px;
         color: #ff7878;
-        font-size: 28px;
+        font-size: 21px;
         line-height: 35px;
-        @media (max-width: 425px) {
-          font-size: 21px;
-        }
       }
       & > span {
-        font-size: 20px;
+        font-size: 12px;
         margin: 0;
-        @media (max-width: 425px) {
-          font-size: 12px;
-        }
-      }
-      @media (max-width: 425px) {
-        font-size: 19px;
       }
     }
-    @media (max-width: 425px) {
-      margin-bottom: 19px;
-    }
   }
-  @media (max-width: 425px) {
-    margin-bottom: 19px;
-  }
-}
-
-.avatar {
-  @media (max-width: 425px) {
+  &__avatar {
     width: 32px;
     height: 32px;
+  }
+  &__close {
+    position: absolute;
+    right: 21px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    @media (min-width: 768px) {
+      right: 40px;
+    }
+    @media (min-width: 1200px) {
+      right: 0;
+    }
+  }
+  &__stars {
+    &-icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .result {
+    &__close {
+      right: 40px;
+    }
+    &__stars {
+      &-icon {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .result {
+    margin-bottom: 58px;
+    &__score {
+      margin-bottom: 29px;
+      span {
+        font-size: 22px;
+        b {
+          font-size: 28px;
+        }
+        & > span {
+          font-size: 20px;
+        }
+      }
+    }
+    &__close {
+      right: 0;
+    }
   }
 }

@@ -1,41 +1,17 @@
-#difficulty {
-  background: url("../img/arrow_white.svg") no-repeat 95%;
-  @media (max-width: 425px) {
-    background-size: 15px;
-  }
-}
-
 .logo {
-  margin-top: -90px;
-  margin-bottom: -70px;
-  @media (max-width: 769px) {
+  width: 372px;
+  height: 248px;
+  margin-top: -30px;
+}
+@media (min-width: 768px) {
+  .logo {
     width: 600px;
-    margin-bottom: -100px;
-  }
-  @media (max-width: 425px) {
-    width: 372px;
-    margin-top: -150px;
+    height: 359px;
   }
 }
-
-.close {
-  position: absolute;
-  right: 0;
-  cursor: pointer;
-  @media (max-width: 1024px) {
-    right: 40px;
-  }
-  @media (max-width: 425px) {
-    width: 15px;
-    height: 15px;
-    right: 21px;
-  }
-}
-
-@media (max-width: 425px) {
-  .amount,
-  .difficulty {
-    width: 25px;
-    height: 26px;
+@media (min-width: 1200px) {
+  .logo {
+    width: 707px;
+    height: 471px;
   }
 }
